@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-in</title>
+  </head>
+  <body>
+    <div>
+      <!-- Inlogging. -->
+
+      <input
+        onchange="saveUsername(this.value)"
+        type="usernametext"
+        placeholder="username"
+      />
+      <input
+        onchange="savePassword(this.value)"
+        type="passwordtext"
+        placeholder="password"
+      />
+
+      <button onclick="logIn()">Logg inn</button>
+
+      <p id="Message"></p>
+    </div>
+    <script>
+      let username = "Bjarne";
+      let password = "bjarneerbest69";
+
+      let inputUsername = "";
+      let inputPassword = "";
+
+      //  Brukernavn funksjoner
+      function saveUsername(inputUser) {
+        inputUsername = inputUser;
+      }
+
+      function savePassword(inputPW) {
+        inputPassword = inputPW;
+      }
+
+      // Button function
+
+      function logIn() {
+        if (username === inputUsername && password === inputPassword) {
+          document.getElementById("Message").innerHTML = "Logget inn";
+        } else {
+          document.getElementById("Message").innerHTML = "You are fail";
+        }
+        // Få knapp til å logge med brukernavnet
+        //  og passord ved trykk.
+      }
+    </script>
+  </body>
+</html>
