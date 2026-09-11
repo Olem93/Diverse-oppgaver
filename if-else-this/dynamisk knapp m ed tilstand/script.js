@@ -2,26 +2,20 @@
 let buttonThing = 0;
 let isButtonSpawned = "";
 let timeOut;
+let redvar = 1;
 // let knappId = document.getElementById("knappId");
 //view
 updateView();
-
 function updateView() {
   dynaknapp.innerHTML = /*HTML*/ `
-  <div id="knappId"  onclick="summonButton()">Ikke trykk her! do not press! IKKE LOV!
-    </div>
-    <div id="spawnPoint"></div>
+  <button onclick="summonButton">test 123 trykkbar div</button>
+    <div>${summonButton()}</div>
     `;
 }
 
 // controller
 
 function summonButton() {
-  spawnPoint.innerHTML += /*HTML*/ `
-    <button id="spawnedButton" onclick="buttonColorchange(this)"></button>
-`;
-  copyKnapp();
-}
 
 // function buttonColorchange(shift) {
 
@@ -44,7 +38,3 @@ function summonButton() {
 // function randomNum() {
 //   return Math.floor(Math.random() * 3) + 1;
 // }
-
-function copyKnapp() {
-  let cloneVar = document.getElementById("spawnedButton").innerHTML;
-}
