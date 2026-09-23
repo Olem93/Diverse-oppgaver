@@ -40,6 +40,7 @@ function viewAmericanMenu() {
   let html = /*html*/ `
   <h1>KYLE'S GREASY PIES!</h1>
   <h3>PIZZA MENU!</h3>
+  <p>Warning: Consumption of lead might cause poisoning and voting for Trump.</p>
 
   `;
   for (let i = 0; i < pizzaUSA.length; i++) {
@@ -52,7 +53,7 @@ function viewAmericanMenu() {
   <p>Price: $ ${pizzaUSA[i].price}</p>
   <p><button onlick="">ADD TO CART TO BUY</button></p>
 
-  Warning: Consumption of lead might cause poisoning and voting for Trump. 
+  
   `;
   }
   return html;
