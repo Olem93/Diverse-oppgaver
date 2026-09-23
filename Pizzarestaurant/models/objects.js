@@ -7,7 +7,7 @@ const pizzaItaliano = [
   {
     pizzaNameITA: "Pizza Marinara",
     ingredients: ["Pomodoro di San Marzano", "Aglio", "Oregano calabrese"],
-    price: 1.99,
+    price: 1,
   },
 
   {
@@ -18,7 +18,7 @@ const pizzaItaliano = [
       "Pecorino Romano",
       "Basilico",
     ],
-    price: 2.99,
+    price: 2,
   },
 
   {
@@ -30,7 +30,7 @@ const pizzaItaliano = [
       "Pecorino Romano",
       "Basilico",
     ],
-    price: 5.99,
+    price: 5,
   },
 
   {
@@ -96,13 +96,3 @@ const pizzaUSA = [
     price: 199.99,
   },
 ];
-
-let language = "";
-let italianLan;
-// **Oppgave 2. Pizzarestaurant**
-// Du driver en pizzarestaurant der bestillingene går bananas!
-// - Model: Lag en Pizza-liste med navn, ingredienser (array?) og pris.
-// - View: Vis menyen og dagens bestillinger.
-// - Controller: Lag funksjoner for å:
-// Regne ut totalpris for alle bestillinger.
-// Hvis en pizza koster over 2999kr, gi advarsel: "Er du sikker på at du vil kjøpe denne luksuspizzaen?!"

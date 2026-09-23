@@ -1,0 +1,2 @@
+let pizzaprice = "";
+let totalprice = "";
