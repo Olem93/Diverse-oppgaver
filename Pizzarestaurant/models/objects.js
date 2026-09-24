@@ -63,7 +63,22 @@ const pizzaUSA = [
       "LARD",
       "LEAD",
     ],
-    price: 29.99,
+    price: 9,
+    menuNumber: "ONE: ",
+  },
+
+  {
+    pizzaNameUSA: "BUFFALO CHICKEN PIE",
+    ingredients: [
+      "A WHOLE DEEP FRIED CHICKEN!",
+      "OUR TOP SECRET BUFFALO SAUCE!",
+      "EXTRA BUTTER",
+      "BACONGREASE",
+      "LARD",
+      "LEAD",
+    ],
+    price: 12,
+    menuNumber: "TWO: ",
   },
 
   {
@@ -77,7 +92,8 @@ const pizzaUSA = [
       "LARD",
       "LEAD",
     ],
-    price: 59.99,
+    price: 15,
+    menuNumber: "THREE: ",
   },
 
   {
@@ -97,6 +113,7 @@ const pizzaUSA = [
       "LARD",
       "LEAD",
     ],
-    price: 199.99,
+    price: 200,
+    menuNumber: "FOUR: ",
   },
 ];

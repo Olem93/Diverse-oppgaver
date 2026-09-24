@@ -1,5 +1,6 @@
 function addToCart(index) {
-  if (viewItalianMenu()) {
+  console.log(index);
+  if (model.currentPage === "italiano") {
     pizzaprice = pizzaItaliano[index].price;
     totalprice += pizzaprice;
     currency = "TOTALE EUR €";
@@ -13,12 +14,19 @@ function addToCart(index) {
       }
     }
   }
+  if (model.currentPage === "american") {
+    pizzaprice = pizzaUSA[index].price;
+    totalprice += pizzaprice;
+    currency = "TOTAL PUSSY EUROPE MONEY";
+    if (totalprice >= 0) {
+      totalprice = totalprice++;
+      {
+        if (pizzaprice >= 150) {
+          pricewarning = "GIVE OUR CEO MORE MONEY!";
+        } else pricewarning = "";
+      }
+    }
+  }
   updateView();
   console.log(totalprice, pricewarning);
 }
-
-// function calculatePrice() {
-//   if (pizzaprice > i) {
-//   } else if (pizzaprice === null) {
-//   }
-// }

@@ -51,18 +51,18 @@ function viewAmericanMenu() {
   let html = /*html*/ `
   <h1>KYLE'S GREASY PIES!</h1>
   <h3>PIZZA MENU!</h3>
-  <p>Warning: Consumption of lead might cause poisoning and voting for Trump.</p>
+  <p>Warning: Consumption of lead might cause poisoning and bad opinions.</p>
 
   `;
   for (let i = 0; i < pizzaUSA.length; i++) {
     html += /*html*/ `
-  <p> ${pizzaUSA[i].pizzaNameUSA}</p>
+  <p>${pizzaUSA[i].menuNumber} ${pizzaUSA[i].pizzaNameUSA}</p>
   <ul>
   <li>Ingredients: ${pizzaUSA[i].ingredients}
   </li>
   </ul>
   <p>$ ${pizzaUSA[i].price}</p>
-  <p><button onlick="addToCart(${i})">ADD TO CART TO BUY</button></p>
+  <p><button onclick="addToCart(${i})">ADD TO CART TO BUY</button></p>
 
   `;
   }
