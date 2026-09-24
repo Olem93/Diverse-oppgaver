@@ -57,6 +57,7 @@ function viewAmericanMenu() {
   for (let i = 0; i < pizzaUSA.length; i++) {
     html += /*html*/ `
   <p>${pizzaUSA[i].menuNumber} ${pizzaUSA[i].pizzaNameUSA}</p>
+  <p>${pizzaUSA[i].menuImage}
   <ul>
   <li>Ingredients: ${pizzaUSA[i].ingredients}
   </li>
