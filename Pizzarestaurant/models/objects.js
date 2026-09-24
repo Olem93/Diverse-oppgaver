@@ -8,6 +8,7 @@ const pizzaItaliano = [
     pizzaNameITA: "Pizza Marinara",
     ingredients: ["Pomodoro di San Marzano", "Aglio", "Oregano calabrese"],
     price: 1,
+    menuNumber: 1,
   },
 
   {
@@ -19,6 +20,7 @@ const pizzaItaliano = [
       "Basilico",
     ],
     price: 2,
+    menuNumber: 3,
   },
 
   {
@@ -31,6 +33,7 @@ const pizzaItaliano = [
       "Basilico",
     ],
     price: 5,
+    menuNumber: 3,
   },
 
   {
@@ -43,6 +46,7 @@ const pizzaItaliano = [
       "Foglie d'oro",
     ],
     price: 2000,
+    menuNumber: 4,
   },
 ];
 

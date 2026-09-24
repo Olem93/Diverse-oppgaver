@@ -3,7 +3,7 @@ updateView();
 
 function updateView() {
   let html = "";
-  let pricewarning = "";
+
   if (model.currentPage === "home") html = "";
   else if (model.currentPage === "italiano") html = viewItalianMenu();
   else if (model.currentPage === "american") html = viewAmericanMenu();
@@ -11,10 +11,10 @@ function updateView() {
   <div>
     <button onclick="changePage('')">Home</button>
     <button onclick="changePage('italiano')">Italiano</button>
-    <!--<button onclick="changePage('american')">American</button>-->
+    <button onclick="changePage('american')">American</button>
   </div>
   <div>${html}</div>
-  <div>${totalprice}</div>
+  <div>${currency} ${totalprice}</div>
   <div>${pricewarning}</div>
 
   `;
@@ -30,7 +30,7 @@ function viewItalianMenu() {
   `;
   for (let i = 0; i < pizzaItaliano.length; i++) {
     html += /*html*/ `
-    <p>${pizzaItaliano[i].pizzaNameITA}</p>
+    <p>${pizzaItaliano[i].menuNumber}. ${pizzaItaliano[i].pizzaNameITA}</p>
     <ul>
     <li>Ingredienti: ${pizzaItaliano[i].ingredients}
     </li>
@@ -44,27 +44,30 @@ function viewItalianMenu() {
   return html;
 }
 
-// function viewAmericanMenu() {
-//   let html = /*html*/ `
-//   <h1>KYLE'S GREASY PIES!</h1>
-//   <h3>PIZZA MENU!</h3>
-//   <p>Warning: Consumption of lead might cause poisoning and voting for Trump.</p>
+//<button onclick="addToCart(${i})">Aggiungi</button>
+// <p><button onlick="addToCart(${i})">ADD TO CART TO BUY</button></p>
 
-//   `;
-//   for (let i = 0; i < pizzaUSA.length; i++) {
-//     html += /*html*/ `
-//   <p>${pizzaUSA[i].pizzaNameUSA}</p>
-//   <ul>
-//   <li>Ingredients: ${pizzaUSA[i].ingredients}
-//   </li>
-//   </ul>
-//   <p>$ ${pizzaUSA[i].price}</p>
-//   <p><button onlick="addToCart(${i})">ADD TO CART TO BUY</button></p>
+function viewAmericanMenu() {
+  let html = /*html*/ `
+  <h1>KYLE'S GREASY PIES!</h1>
+  <h3>PIZZA MENU!</h3>
+  <p>Warning: Consumption of lead might cause poisoning and voting for Trump.</p>
 
-//   `;
-//   }
-//   return html;
-// }
+  `;
+  for (let i = 0; i < pizzaUSA.length; i++) {
+    html += /*html*/ `
+  <p> ${pizzaUSA[i].pizzaNameUSA}</p>
+  <ul>
+  <li>Ingredients: ${pizzaUSA[i].ingredients}
+  </li>
+  </ul>
+  <p>$ ${pizzaUSA[i].price}</p>
+  <p><button onlick="addToCart(${i})">ADD TO CART TO BUY</button></p>
+
+  `;
+  }
+  return html;
+}
 
 // **Oppgave 2. Pizzarestaurant**
 // Du driver en pizzarestaurant der bestillingene går bananas!
