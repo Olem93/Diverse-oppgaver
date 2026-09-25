@@ -49,21 +49,32 @@ function viewItalianMenu() {
 
 function viewAmericanMenu() {
   let html = /*html*/ `
-  <h1>KYLE'S GREASY PIES!</h1>
+<div>
+<header>
+<img id="headerUSA" src="images/pizzaUSA-Banner.webp" alt="KYLE'S GREASY PIES!"/>
   <h3>PIZZA MENU!</h3>
-  <p>Warning: Consumption of lead might cause poisoning and bad opinions.</p>
+
+</header>
+  
 
   `;
   for (let i = 0; i < pizzaUSA.length; i++) {
     html += /*html*/ `
   <p>${pizzaUSA[i].menuNumber} ${pizzaUSA[i].pizzaNameUSA}</p>
-  <p>${pizzaUSA[i].menuImage}
-  <ul>
-  <li>Ingredients: ${pizzaUSA[i].ingredients}
-  </li>
+  <img class="menuIMG-USA" src=${pizzaUSA[i].menuImage} alt="menupicture"/>
+  <p><button onclick="addToCart(${i})">ADD TO CART</button></p>
+  <p>$ ${pizzaUSA[i].price}</p>  <ul id="ingredients-list-USA">
+  <li>Ingredients: ${pizzaUSA[i].ingredients[1]}</li>
+  <li>Ingredients: ${pizzaUSA[i].ingredients[2]}</li>
+  <li>Ingredients: ${pizzaUSA[i].ingredients[3]}</li>
+  <li>Ingredients: ${pizzaUSA[i].ingredients[4]}</li>
+  <li>Ingredients: ${pizzaUSA[i].ingredients[5]}</li>
+  <li>Ingredients: ${pizzaUSA[i].ingredients[6]}</li>  
   </ul>
-  <p>$ ${pizzaUSA[i].price}</p>
-  <p><button onclick="addToCart(${i})">ADD TO CART TO BUY</button></p>
+
+  <p>May contain traces of lead and asbestos.</p>
+  </div>
+
 
   `;
   }

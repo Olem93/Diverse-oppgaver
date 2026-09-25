@@ -61,10 +61,10 @@ const pizzaUSA = [
       "OREGANO",
       "BACONGREASE",
       "LARD",
-      "LEAD",
     ],
     price: 9,
-    menuNumber: "ONE: ",
+    menuNumber: "1: ",
+    menuImage: "images/pizza-usa-img1.webp",
   },
 
   {
@@ -75,14 +75,14 @@ const pizzaUSA = [
       "EXTRA BUTTER",
       "BACONGREASE",
       "LARD",
-      "LEAD",
     ],
     price: 12,
-    menuNumber: "TWO: ",
+    menuNumber: "2: ",
+    menuImage: "images/pizza-usa-img2.webp",
   },
 
   {
-    pizzaNameUSA: "FUCK IT UP WITH BACON",
+    pizzaNameUSA: "",
     ingredients: [
       "TOMATERSAUCE",
       "AMERICAN CHEESE",
@@ -90,30 +90,31 @@ const pizzaUSA = [
       "BEEF",
       "BACONGREASE",
       "LARD",
-      "LEAD",
     ],
     price: 15,
-    menuNumber: "THREE: ",
+    menuNumber: "3: ",
+    menuImage: "images/pizza-usa-img3.webp",
   },
 
   {
-    pizzaNameUSA: "FUCK MY WALLET",
+    pizzaNameUSA: "ALLIGATOR PIE SUPREME",
     ingredients: [
       "TOMATERSAUCE",
       "CHEESE",
-      "OREGANO",
-      "BEEF",
+      "ALLIGATOR HEAD",
+      "ALLIGATOR LIMBS",
+      "ALLIGATOR BEEF",
       "BACON",
-      "ALLIGATOR",
-      "BOBCAT",
-      "BACON",
-      "EXTRA BACON",
       "HABANERO SAUCE",
+      "OREGANO",
       "BACONGREASE",
       "LARD",
-      "LEAD",
     ],
     price: 200,
-    menuNumber: "FOUR: ",
+    menuNumber: "4: ",
+    menuImage: "images/pizza-usa-img4.webp",
   },
 ];
+
+// const menuImage = new Image();
+// menuImage.src = "pizzaUSA-IMG-4.jpg";
